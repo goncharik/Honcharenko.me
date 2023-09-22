@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ahoy There! on Eugene Honcharenko</title>
-    <link>https://honcharenko.me/</link>
-    <description>Recent content in Ahoy There! on Eugene Honcharenko</description>
+    <title>UIKit on Eugene Honcharenko</title>
+    <link>https://honcharenko.me/tags/uikit/</link>
+    <description>Recent content in UIKit on Eugene Honcharenko</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>{year}</copyright>
-    <lastBuildDate>Thu, 07 Sep 2023 07:03:22 +0200</lastBuildDate><atom:link href="https://honcharenko.me/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 07 Sep 2023 07:03:22 +0200</lastBuildDate><atom:link href="https://honcharenko.me/tags/uikit/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Best App Architecture for UIKit and iOS12 support: MVVM&#43;C</title>
       <link>https://honcharenko.me/posts/best-app-architecture-uikit-ios12/</link>
