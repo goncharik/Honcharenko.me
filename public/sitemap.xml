@@ -3,27 +3,45 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://honcharenko.me/</loc>
-    <lastmod>2023-09-07T07:03:22+02:00</lastmod>
+    <lastmod>2025-04-14T13:03:22+02:00</lastmod>
   </url><url>
-    <loc>https://honcharenko.me/tags/architecture/</loc>
-    <lastmod>2023-09-07T07:03:22+02:00</lastmod>
+    <loc>https://honcharenko.me/tags/android/</loc>
+    <lastmod>2025-04-14T13:03:22+02:00</lastmod>
+  </url><url>
+    <loc>https://honcharenko.me/categories/</loc>
+    <lastmod>2025-04-14T13:03:22+02:00</lastmod>
+  </url><url>
+    <loc>https://honcharenko.me/tags/ios/</loc>
+    <lastmod>2025-04-14T13:03:22+02:00</lastmod>
+  </url><url>
+    <loc>https://honcharenko.me/categories/localization/</loc>
+    <lastmod>2025-04-14T13:03:22+02:00</lastmod>
+  </url><url>
+    <loc>https://honcharenko.me/tags/localization/</loc>
+    <lastmod>2025-04-14T13:03:22+02:00</lastmod>
+  </url><url>
+    <loc>https://honcharenko.me/posts/</loc>
+    <lastmod>2025-04-14T13:03:22+02:00</lastmod>
+  </url><url>
+    <loc>https://honcharenko.me/posts/simplifying-mobile-app-localization-with-google-sheets/</loc>
+    <lastmod>2025-04-14T13:03:22+02:00</lastmod>
+  </url><url>
+    <loc>https://honcharenko.me/tags/spreadsheets/</loc>
+    <lastmod>2025-04-14T13:03:22+02:00</lastmod>
+  </url><url>
+    <loc>https://honcharenko.me/tags/</loc>
+    <lastmod>2025-04-14T13:03:22+02:00</lastmod>
   </url><url>
     <loc>https://honcharenko.me/categories/architecture/</loc>
     <lastmod>2023-09-07T07:03:22+02:00</lastmod>
   </url><url>
-    <loc>https://honcharenko.me/categories/</loc>
+    <loc>https://honcharenko.me/tags/architecture/</loc>
     <lastmod>2023-09-07T07:03:22+02:00</lastmod>
   </url><url>
     <loc>https://honcharenko.me/tags/ios12/</loc>
     <lastmod>2023-09-07T07:03:22+02:00</lastmod>
   </url><url>
     <loc>https://honcharenko.me/tags/mvvm/</loc>
-    <lastmod>2023-09-07T07:03:22+02:00</lastmod>
-  </url><url>
-    <loc>https://honcharenko.me/posts/</loc>
-    <lastmod>2023-09-07T07:03:22+02:00</lastmod>
-  </url><url>
-    <loc>https://honcharenko.me/tags/</loc>
     <lastmod>2023-09-07T07:03:22+02:00</lastmod>
   </url><url>
     <loc>https://honcharenko.me/posts/best-app-architecture-uikit-ios12/</loc>

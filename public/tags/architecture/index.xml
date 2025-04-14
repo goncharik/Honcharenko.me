@@ -4,18 +4,17 @@
     <title>Architecture on Eugene Honcharenko</title>
     <link>https://honcharenko.me/tags/architecture/</link>
     <description>Recent content in Architecture on Eugene Honcharenko</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>{year}</copyright>
-    <lastBuildDate>Thu, 07 Sep 2023 07:03:22 +0200</lastBuildDate><atom:link href="https://honcharenko.me/tags/architecture/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 07 Sep 2023 07:03:22 +0200</lastBuildDate>
+    <atom:link href="https://honcharenko.me/tags/architecture/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Best App Architecture for UIKit and iOS12 support: MVVM&#43;C</title>
       <link>https://honcharenko.me/posts/best-app-architecture-uikit-ios12/</link>
       <pubDate>Thu, 07 Sep 2023 07:03:22 +0200</pubDate>
-      
       <guid>https://honcharenko.me/posts/best-app-architecture-uikit-ios12/</guid>
-      <description>Introduction In the fast-paced world of mobile app development, one thing stands as a fundamental pillar of success: app architecture.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;In the fast-paced world of mobile app development, one thing stands as a fundamental pillar of success: app architecture. It&amp;rsquo;s the unsung hero behind the scenes that ensures your app runs smoothly, scales gracefully, and remains maintainable over time.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

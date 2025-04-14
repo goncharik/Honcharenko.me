@@ -63,4 +63,4 @@ Now that you're acquainted with the components and principles of MVVM+C, let's d
 
 In summary, adopting MVVM+C for your iOS app brings clear advantages in terms of code organization, collaboration, debugging, and scalability. Its ability to adapt to modern and legacy platforms makes it a compelling choice for developers looking to craft high-quality iOS applications. With the MVVM+C framework in your arsenal, you're better equipped to navigate the complex world of iOS app development with confidence and precision.
 
-In next article I'll review some tools and libraries that help in implementing MVVM+C in your projects and show some practical examples of how MVVM+C may look like in real life project and how it may be evolved for new technologies that we have with newer iOS versions such as Combine, SwiftUI, Swift Concurrency (async/await)
+In future articles I'll review some tools and libraries that help in implementing MVVM+C in your projects and show some practical examples of how MVVM+C may look like in real life project and how it may be evolved for new technologies that we have with newer iOS versions such as Combine, SwiftUI, Swift Concurrency (async/await)

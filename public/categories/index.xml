@@ -4,45 +4,45 @@
     <title>Categories on Eugene Honcharenko</title>
     <link>https://honcharenko.me/categories/</link>
     <description>Recent content in Categories on Eugene Honcharenko</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>{year}</copyright>
-    <lastBuildDate>Thu, 07 Sep 2023 07:03:22 +0200</lastBuildDate><atom:link href="https://honcharenko.me/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 14 Apr 2025 13:03:22 +0200</lastBuildDate>
+    <atom:link href="https://honcharenko.me/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Localization</title>
+      <link>https://honcharenko.me/categories/localization/</link>
+      <pubDate>Mon, 14 Apr 2025 13:03:22 +0200</pubDate>
+      <guid>https://honcharenko.me/categories/localization/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Architecture</title>
       <link>https://honcharenko.me/categories/architecture/</link>
       <pubDate>Thu, 07 Sep 2023 07:03:22 +0200</pubDate>
-      
       <guid>https://honcharenko.me/categories/architecture/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>CSS</title>
       <link>https://honcharenko.me/categories/css/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://honcharenko.me/categories/css/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>JavaScript</title>
       <link>https://honcharenko.me/categories/javascript/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://honcharenko.me/categories/javascript/</guid>
-      <description>Description</description>
+      <description>&lt;p&gt;Description&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Uncategories</title>
       <link>https://honcharenko.me/categories/uncategories/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://honcharenko.me/categories/uncategories/</guid>
-      <description>Description</description>
+      <description>&lt;p&gt;Description&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>
