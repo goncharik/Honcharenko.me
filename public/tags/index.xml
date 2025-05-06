@@ -7,34 +7,62 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>{year}</copyright>
-    <lastBuildDate>Mon, 14 Apr 2025 13:03:22 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 06 May 2025 07:03:55 +0200</lastBuildDate>
     <atom:link href="https://honcharenko.me/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI</title>
+      <link>https://honcharenko.me/tags/ai/</link>
+      <pubDate>Tue, 06 May 2025 07:03:55 +0200</pubDate>
+      <guid>https://honcharenko.me/tags/ai/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Android</title>
       <link>https://honcharenko.me/tags/android/</link>
-      <pubDate>Mon, 14 Apr 2025 13:03:22 +0200</pubDate>
+      <pubDate>Tue, 06 May 2025 07:03:55 +0200</pubDate>
       <guid>https://honcharenko.me/tags/android/</guid>
       <description></description>
     </item>
     <item>
       <title>IOS</title>
       <link>https://honcharenko.me/tags/ios/</link>
-      <pubDate>Mon, 14 Apr 2025 13:03:22 +0200</pubDate>
+      <pubDate>Tue, 06 May 2025 07:03:55 +0200</pubDate>
       <guid>https://honcharenko.me/tags/ios/</guid>
       <description></description>
     </item>
     <item>
       <title>Localization</title>
       <link>https://honcharenko.me/tags/localization/</link>
-      <pubDate>Mon, 14 Apr 2025 13:03:22 +0200</pubDate>
+      <pubDate>Tue, 06 May 2025 07:03:55 +0200</pubDate>
       <guid>https://honcharenko.me/tags/localization/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pet Projects</title>
+      <link>https://honcharenko.me/tags/pet-projects/</link>
+      <pubDate>Tue, 06 May 2025 07:03:55 +0200</pubDate>
+      <guid>https://honcharenko.me/tags/pet-projects/</guid>
       <description></description>
     </item>
     <item>
       <title>Spreadsheets</title>
       <link>https://honcharenko.me/tags/spreadsheets/</link>
-      <pubDate>Mon, 14 Apr 2025 13:03:22 +0200</pubDate>
+      <pubDate>Tue, 06 May 2025 07:03:55 +0200</pubDate>
       <guid>https://honcharenko.me/tags/spreadsheets/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SwiftGen</title>
+      <link>https://honcharenko.me/tags/swiftgen/</link>
+      <pubDate>Tue, 06 May 2025 07:03:55 +0200</pubDate>
+      <guid>https://honcharenko.me/tags/swiftgen/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Open Source</title>
+      <link>https://honcharenko.me/tags/open-source/</link>
+      <pubDate>Mon, 14 Apr 2025 13:03:22 +0200</pubDate>
+      <guid>https://honcharenko.me/tags/open-source/</guid>
       <description></description>
     </item>
     <item>

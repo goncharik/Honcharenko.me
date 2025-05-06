@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-us" class="scroll-smooth">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MVVM&#43;C iOS Architecture on Practice: Tools, Libraries, and How-Tos</title>
+<meta name="description" content="Outline:
+I. Introduction
+Recup of previous post
+III. Building Blocks of MVVM&#43;C: Key Components Explored">
+<link rel="canonical" href="http://localhost:1313/posts/mvvm-c-on-practice/">
+<link rel="robots" href="/robots.txt" />
+
+
+<link rel="stylesheet" href="/css/main.css">
+</head>
+    <body class="max-w-screen-md px-10 mx-auto"><header class="flex flex-col sm:flex-row items-center gap-5 sm:gap-10 pt-16 py-12">
+    
+
+<figure class="flex-none w-20 h-20 rounded-full overflow-hidden" ><a href="http://localhost:1313/"><img srcset="/img/avatar_hu_1f6d6174ffa9802e.jpeg 80w" src="/img/avatar.jpeg" width="80" height="80" alt="Eugene Honcharenko"></a></figure>
+
+    <div class="flex flex-col gap-5">
+    <a href="http://localhost:1313/">
+    
+    <h3 class="text-center sm:text-left text-4xl font-extrabold text-gray-800 ">Eugene Honcharenko</h3>
+    
+</a>
+    <nav>
+    <ul class="flex flex-wrap justify-center uppercase text-xs font-semibold gap-7 text-gray-500 ">
+        
+        
+        <li class="hover:text-gray-500"><a href="/">Home</a></li>
+        
+        <li class="hover:text-gray-500"><a href="/posts">Posts</a></li>
+        
+        <li class="hover:text-gray-500"><a href="https://www.buymeacoffee.com/honcharenko">Donate</a></li>
+        
+    </ul>
+</nav>
+    </div>
+</header><div id="content">
+<article class="flex flex-col gap-10">
+    <header class="flex flex-col gap-2">
+        <h2 class="text-4xl leading-snug font-bold text-gray-900">MVVM&#43;C iOS Architecture on Practice: Tools, Libraries, and How-Tos</h2>
+
+        <div class="text-sm font-semibold text-gray-500 flex gap-3">
+        
+<time datetime="2023-09-22 07:31:12 &#43;0200 CEST" title="2023-09-22 07:31:12 &#43;0200 CEST">
+    22 September 2023
+</time>
+        
+        —
+        
+            <a class="hover:text-gray-500" href="/categories/architecture/" alt="Architecture" >
+                Architecture
+                </a>
+        
+
+        </div>
+    </header>
+    <section class="content text-lg text-gray-800">
+    <p>Outline:</p>
+<p>I. Introduction</p>
+<p>Recup of previous post</p>
+<p>III. Building Blocks of MVVM+C: Key Components Explored</p>
+<p>Deep Dive into the Model
+Structuring Your Data
+Implementing Business Logic
+Navigating the View Layer
+Creating User Interfaces
+Responding to User Input
+ViewModel&rsquo;s Role in Data Transformation
+Preparing Data for Presentation
+Handling User Actions
+Coordination for Seamless App Flow
+Orchestrating View Transitions
+Managing Navigation Hierarchies</p>
+<p>IV. The Power of Reactive Programming in MVVM+C</p>
+<p>RxSwift: Revolutionizing Asynchronous Programming
+Observables and Observers
+Binding Data and UI
+Combine Framework: Apple&rsquo;s Native Reactive Approach
+Publishers and Subscribers
+Seamless Data Flow Integration</p>
+<p>V. Tooling Up for MVVM+C Development</p>
+<p>Essential Libraries for Your MVVM+C Arsenal
+RxSwift or Combine: Choosing the Right Reactive Framework
+Networking Libraries for Seamless Data Fetching
+Core Data for Local Data Storage
+UI Frameworks for Creating Stunning Interfaces</p>
+<p>VI. Designing MVVM+C with Scalability in Mind</p>
+<p>Scalable Project Structuring
+Organizing Files and Folders
+Modularization for Enhanced Maintenance
+Dependency Injection for Testability
+Achieving Loose Coupling
+Writing Unit Tests for ViewModel Logic</p>
+<p>VII. Best Practices and Guidelines</p>
+<p>Crafting Robust ViewModels
+Avoiding Massive ViewModels
+Separating Presentation Logic
+Data Binding Techniques
+Implementing Two-Way Data Binding
+Handling User Input with Commands
+Error Handling Strategies
+Gracefully Managing Failures
+User-Friendly Error Messages</p>
+<p>VIII. Migrating to MVVM+C: A Step-by-Step Guide</p>
+<p>Assessing Your Existing Architecture
+Identifying Areas for MVVM+C Integration
+Gradual Adoption Strategies
+Piloting MVVM+C in a Module
+Full-Scale Migration
+Monitoring and Performance Analysis</p>
+<p>IX. Real-world Implementation: Case Studies</p>
+<p>Examining Successful Apps Built on MVVM+C
+Lessons from Industry Leaders
+Overcoming Challenges and Achieving Success</p>
+<p>X. Future-Proofing Your App with MVVM+C</p>
+<p>iOS Version Compatibility
+iOS 12 Support and Beyond
+Staying Agile in a Changing Landscape
+Preparing for Swift Updates</p>
+<p>XI. MVVM+C and Beyond: Exploring Advanced Concepts</p>
+<p>MVVM+C in Cross-Platform Development
+MVVM+C in SwiftUI
+Extending MVVM+C for Complex Scenarios</p>
+<p>XII. Conclusion</p>
+<p>Recap of MVVM+C Benefits
+Empowering Your iOS Development Journey
+Next Steps: Putting MVVM+C into Practice</p>
+
+    </section>
+    
+    
+    
+
+    
+    
+
+    <footer>
+        
+        <div class="pb-14 taxonomy-list tags-list text-gray-600 text-sm font-medium">
+            
+                    <a class="bg-gray-100 py-2 px-3 rounded-lg" href="/tags/architecture/" alt="Architecture" >
+                        Architecture
+                    </a>
+            
+                    <a class="bg-gray-100 py-2 px-3 rounded-lg" href="/tags/mvvm/" alt="MVVM" >
+                        MVVM
+                    </a>
+            
+        </div>
+
+
+    </footer>
+</article>
+
+        </div><footer class="pt-5 pb-10 grid gap-3 sm:grid-cols-2">
+    <div class="text-xs font-semibold text-gray-500 order-2 sm:order-1 ">
+    © 2025 — <a class="hover:text-gray-500" href="http://localhost:1313/">Eugene Honcharenko</a>
+</div>
+    <div class="text-xs font-semibold text-gray-500 order-1 sm:order-2">
+    <ul class="flex sm:justify-end gap-5">
+    <li><a class="hover:text-gray-500" href="https://linkedin.com/in/yhoncharenko/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li><li><a class="hover:text-gray-500" href="https://github.com/goncharik" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+    </ul>
+</div>
+</footer></body>
+</html>

@@ -10,6 +10,7 @@ tags:
 - Spreadsheets
 - iOS
 - Android
+- Open source
 ---
 
 Hey everyone!
@@ -34,7 +35,7 @@ It exports:
 
 - **Android:** strings.xml with plurals and string arrays ([] in key).
 - **iOS (Legacy):** Localizable.strings and Localizable.stringsdict.
-- **iOS (Modern):** Localizable.xcstrings — a single JSON file for all strings and plurals, perfect for Xcode 15+.
+- **iOS (Modern):** Localizable.xcstrings — a single JSON file for all strings and plurals, perfect for Xcode 15+ projects.
 
 ### Why it’s worth using:
 

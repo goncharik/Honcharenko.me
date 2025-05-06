@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>{year}</copyright>
-    <lastBuildDate>Mon, 14 Apr 2025 13:03:22 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 06 May 2025 07:03:55 +0200</lastBuildDate>
     <atom:link href="https://honcharenko.me/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How I Use AI to Add Localizations to Mobile Apps in Minutes</title>
+      <link>https://honcharenko.me/posts/how-i-use-ai-to-add-localizations-to-mobile-apps-in-minutes/</link>
+      <pubDate>Tue, 06 May 2025 07:03:55 +0200</pubDate>
+      <guid>https://honcharenko.me/posts/how-i-use-ai-to-add-localizations-to-mobile-apps-in-minutes/</guid>
+      <description>&lt;p&gt;Hey again!&lt;/p&gt;&#xA;&lt;p&gt;In my &lt;a href=&#34;https://honcharenko.me/posts/simplifying-mobile-app-localization-with-google-sheets/&#34;&gt;previous post&lt;/a&gt;, I shared my script, &lt;a href=&#34;https://github.com/goncharik/google-sheets-l10n-exporter&#34;&gt;google-sheets-l10n-exporter&lt;/a&gt;, designed to simplify generating localization files for iOS and Android directly from a Google Sheet. It was born out of the need to escape the tedious manual syncing of &lt;code&gt;.strings&lt;/code&gt;, &lt;code&gt;.stringsdict&lt;/code&gt;, &lt;code&gt;.xml&lt;/code&gt;, and now &lt;code&gt;.xcstrings&lt;/code&gt; files.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Simplifying Mobile App Localization with Google Sheets</title>
       <link>https://honcharenko.me/posts/simplifying-mobile-app-localization-with-google-sheets/</link>
