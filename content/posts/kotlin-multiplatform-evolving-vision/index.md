@@ -12,7 +12,7 @@ tags:
 - KMP
 ---
 
-![multiplatform](../../images/multiplatform.png)
+![multiplatform](multiplatform.png)
 
 Hey everyone!
 
