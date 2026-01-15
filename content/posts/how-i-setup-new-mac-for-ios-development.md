@@ -1,7 +1,7 @@
 ---
 title: "How I Setup a New Mac for iOS Development (2025 Edition)"
 date: 2025-05-07T17:42:18+01:00
-draft: true # Set 'false' to publish
+draft: false
 description: ""
 categories:
 - Tools
