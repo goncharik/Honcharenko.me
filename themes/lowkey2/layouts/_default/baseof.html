@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default `en` }}" class="scroll-smooth">
+    <head>
+    {{- partial "head.html" . -}}
+    <script>
+        (function () {
+            var stored = localStorage.getItem('theme');
+            var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            var isDark = stored ? stored === 'dark' : prefersDark;
+            document.documentElement.classList.toggle('dark', isDark);
+            document.documentElement.dataset.theme = isDark ? 'dark' : 'light';
+        })();
+    </script>
+    </head>
+    <body class="max-w-screen-md px-10 mx-auto bg-white text-gray-900 dark:bg-gray-950 dark:text-gray-100">
+        {{- partial "header.html" . -}}
+        <div id="content">
+        {{- block "main" . }}{{- end }}
+        </div>
+        {{- partial "footer.html" . -}}
+        <script>
+            (function () {
+                var button = document.getElementById('theme-toggle');
+                if (!button) return;
+
+                var media = window.matchMedia('(prefers-color-scheme: dark)');
+                var label = button.querySelector('[data-theme-label]');
+
+                function applyTheme(isDark) {
+                    document.documentElement.classList.toggle('dark', isDark);
+                    document.documentElement.dataset.theme = isDark ? 'dark' : 'light';
+                    button.setAttribute('aria-pressed', isDark ? 'true' : 'false');
+                    if (label) {
+                        label.textContent = isDark ? '🌙' : '☀️';
+                    }
+                }
+
+                function resolveTheme() {
+                    var stored = localStorage.getItem('theme');
+                    if (stored === 'dark') return true;
+                    if (stored === 'light') return false;
+                    return media.matches;
+                }
+
+                applyTheme(resolveTheme());
+
+                if (media.addEventListener) {
+                    media.addEventListener('change', function () {
+                        if (!localStorage.getItem('theme')) {
+                            applyTheme(media.matches);
+                        }
+                    });
+                } else if (media.addListener) {
+                    media.addListener(function () {
+                        if (!localStorage.getItem('theme')) {
+                            applyTheme(media.matches);
+                        }
+                    });
+                }
+
+                button.addEventListener('click', function () {
+                    var isDark = document.documentElement.classList.contains('dark');
+                    var nextDark = !isDark;
+                    localStorage.setItem('theme', nextDark ? 'dark' : 'light');
+                    applyTheme(nextDark);
+                });
+            })();
+        </script>
+    </body>
+</html>

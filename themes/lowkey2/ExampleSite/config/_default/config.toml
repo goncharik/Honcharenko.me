@@ -1,14 +1,13 @@
-baseURL = 'https://honcharenko.me'
+baseURL = 'http://example.org/'
 copyright = "{year}" # To make 2007 - 2022. Just add before {year} example: 2007 - {year}
 languageCode = 'en-us'
-theme = 'lowkey2'
-title = 'Eugene Honcharenko'
+theme = 'lowkey'
+title = 'Lowkey Hugo'
 enableRobotsTXT = true
 
 # List Config
 summaryLength= 15
-[pagination]
-  pagerSize = 5
+paginate = 5
 
 [markup.highlight]
       codeFences = false

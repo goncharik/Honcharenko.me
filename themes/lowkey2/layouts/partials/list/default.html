@@ -1,0 +1,16 @@
+<article class="flex flex-col gap-1">
+    <h1 class="text-xl font-bold text-gray-900 dark:text-gray-100 hover:underline"> <a href=" {{ .Permalink }} ">{{ .Title }}</a></h1>
+    {{ $date := .PublishDate }}
+    {{ if $date.IsZero }}{{ $date = .Date }}{{ end }}
+    <div class="text-sm text-gray-500 dark:text-gray-400" style="font-style: italic;">
+        Published on <time datetime="{{ $date }}">{{ $date.Format "Jan 2, 2006" }}</time>
+    </div>
+    <div class="text-gray-600 dark:text-gray-200">
+    {{ if .Params.description }}
+    {{ .Params.description }}    
+    {{ else if .Summary  }}
+    {{ .Summary }}
+    {{ end }}
+    </div>
+    <div class="mt-2"><a class="inline-flex  gap-2 text-sm font-semibold items-center text-emerald-700 hover:text-emerald-600 dark:text-emerald-400 dark:hover:text-emerald-300" href="{{ .Permalink }}">Read This Article <span class="w-4 h-4 stroke-2">{{ partial "processor/svg" "arrow-right" }}</span> </a> </div>
+</article>
