@@ -113,11 +113,11 @@
     }
 
     .content h2 {
-      @apply text-3xl leading-10;
+      @apply text-3xl leading-10 mt-8;
     }
 
     .content h3 {
-      @apply text-2xl;
+      @apply text-2xl mt-4;
     }
 
     .content h4 {
@@ -203,6 +203,23 @@
 
     .content dd {
       @apply pl-10
+    }
+
+    .content img {
+      @apply max-w-xs mb-5 rounded-lg shadow-lg mx-auto;
+    }
+
+    /* Book club layout - image floats right on wide screens */
+    @media (min-width: 768px) {
+      .content h3 + p img {
+        @apply float-right ml-6 mb-6;
+        margin-left: 1.5rem;
+        margin-right: 0;
+      }
+      /* Clear float before next section */
+      .content h2#my-reading-journey {
+        clear: both;
+      }
     }
 
     span.begin-task-list + ul {

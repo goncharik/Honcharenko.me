@@ -10,11 +10,11 @@
     url = "/posts"
     weight = 2
 
-# [[main]]
-#    identifier = "book-club"
-#    name = "Book Club"
-#    url = "/book-club"
-#    weight = 3
+[[main]]
+   identifier = "book-club"
+   name = "Book Club"
+   url = "/book-club"
+   weight = 3
 
 # [[main]]
 #     identifier = "categories"
