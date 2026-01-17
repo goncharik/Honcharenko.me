@@ -578,6 +578,9 @@ video {
 .visible {
   visibility: visible;
 }
+.absolute {
+  position: absolute;
+}
 .order-1 {
   order: 1;
 }
@@ -705,9 +708,9 @@ video {
 .stroke-2 {
   stroke-width: 2;
 }
-.object-cover {
-  -o-object-fit: cover;
-     object-fit: cover;
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .px-10 {
   padding-left: 2.5rem;

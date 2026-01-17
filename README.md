@@ -9,6 +9,22 @@ hugo new posts/my-post-title.md
 hugo new posts/$(date +%Y-%m-%d)-my-post-title.md
 ```
 
+## Create Post with Page Bundle (for posts with images)
+```bash
+# Hugo creates the directory structure automatically
+hugo new posts/my-post-title/index.md
+
+# Add images to the same directory
+# content/posts/my-post-title/
+# ├── index.md
+# └── image.jpg
+```
+
+Then reference images in markdown as:
+```markdown
+![Alt text](image.jpg)  # Just the filename, no path prefix
+```
+
 ## Local Development
 ```bash
 # Start local server with drafts
