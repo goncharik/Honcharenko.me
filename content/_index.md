@@ -3,6 +3,8 @@ title: "Ahoy There!"
 draft: false
 ---
 
+I'm Eugene, an iOS dev who loves tinkering with personal projects and indie hacking. I write about what I build, the tools I use, and lessons learned along the way.
+
 I'm highly skilled and results-oriented mobile apps developer with 14+ years of experience in designing, developing, and maintaining mobile apps for the iOS platform.
 
 Proficient in Swift, SwiftUI, Reactive Programming, MVVM, UDF, CI/CD and Mobile DevOps.
