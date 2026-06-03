@@ -1,0 +1,84 @@
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+{{- $title := cond .IsHome .Site.Title .Title -}}
+{{- $description := "" -}}
+{{- if .IsHome -}}
+  {{- $description = .Site.Params.description -}}
+{{- else -}}
+  {{- $description = or .Params.description .Summary -}}
+{{- end -}}
+{{- $description = $description | plainify | htmlUnescape | chomp -}}
+
+<title>{{ $title }}</title>
+<meta name="description" content="{{ $description }}">
+<link rel="canonical" href="{{ .Permalink }}">
+<link rel="robots" href="/robots.txt" />
+
+{{/* ---- Resolve the social-share image ---------------------------------- */}}
+{{/* Priority: page `images` front matter -> first image resource of the    */}}
+{{/* page bundle -> site-wide default (params.ogImage).                     */}}
+{{- $ogRes := false -}}
+{{- $ogImage := "" -}}
+{{- with .Params.images -}}
+  {{- $first := index . 0 -}}
+  {{- with ($.Resources.GetMatch $first) -}}
+    {{- $ogRes = . -}}
+  {{- else -}}
+    {{- $ogImage = $first | absURL -}}
+  {{- end -}}
+{{- else -}}
+  {{- with .Resources.ByType "image" -}}
+    {{- $ogRes = index . 0 -}}
+  {{- end -}}
+{{- end -}}
+{{- if not (or $ogRes $ogImage) -}}
+  {{- with .Site.Params.ogImage -}}
+    {{- with (resources.Get .) -}}
+      {{- $ogRes = . -}}
+    {{- else -}}
+      {{- $ogImage = . | absURL -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{/* Cap width so the shared file stays small enough for every platform. */}}
+{{- $ogWidth := 0 -}}
+{{- $ogHeight := 0 -}}
+{{- with $ogRes -}}
+  {{- $r := . -}}
+  {{- if gt $r.Width 1200 -}}
+    {{- $r = $r.Resize "1200x" -}}
+  {{- end -}}
+  {{- $ogImage = $r.Permalink -}}
+  {{- $ogWidth = $r.Width -}}
+  {{- $ogHeight = $r.Height -}}
+{{- end -}}
+
+{{/* ---- Open Graph (Facebook, LinkedIn, Telegram, ...) ------------------ */}}
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $description }}">
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+<meta property="og:locale" content="{{ replace (.Site.LanguageCode | default `en_US`) `-` `_` }}">
+{{- if .IsPage }}
+{{- with .Date }}<meta property="article:published_time" content="{{ .Format `2006-01-02T15:04:05Z07:00` }}">{{ end }}
+{{- end }}
+{{- with $ogImage }}
+<meta property="og:image" content="{{ . }}">
+<meta property="og:image:alt" content="{{ $title }}">
+{{- if $ogWidth }}
+<meta property="og:image:width" content="{{ $ogWidth }}">
+<meta property="og:image:height" content="{{ $ogHeight }}">
+{{- end }}
+{{- end }}
+
+{{/* ---- Twitter / X card ----------------------------------------------- */}}
+<meta name="twitter:card" content="{{ cond (ne $ogImage `` ) `summary_large_image` `summary` }}">
+<meta name="twitter:title" content="{{ $title }}">
+<meta name="twitter:description" content="{{ $description }}">
+{{- with $ogImage }}
+<meta name="twitter:image" content="{{ . }}">
+{{- end }}

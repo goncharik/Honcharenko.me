@@ -2,7 +2,12 @@
 isSinglePage = true
 
 # Meta Config
-description = "Hello"
+description = "Hey, I'm Eugene — an iOS dev who loves tinkering with personal projects and indie hacking. I write about what I build, the tools I use, and lessons learned along the way."
+
+# Default image used for social-share previews (Open Graph / Twitter cards)
+# when a page has no image of its own (e.g. the homepage).
+# Looked up first in assets/, then falls back to static/. Recommended ~1200x630.
+ogImage = "img/og-default.png"
 
 # Header Configuration
 avatar = "img/avatar.jpeg"
