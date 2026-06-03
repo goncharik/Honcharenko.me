@@ -209,6 +209,14 @@
       @apply max-w-xs mb-5 rounded-lg shadow-lg mx-auto;
     }
 
+    .content img.img-wide {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
     /* Book club layout - image floats right on wide screens */
     @media (min-width: 768px) {
       .content h3 + p img {
