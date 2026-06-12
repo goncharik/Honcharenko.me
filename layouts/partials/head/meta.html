@@ -43,14 +43,15 @@
   {{- end -}}
 {{- end -}}
 
-{{/* Cap width so the shared file stays small enough for every platform. */}}
+{{/* Cap width and re-encode as JPEG so the shared file stays small enough */}}
+{{/* for every platform's crawler (large PNGs make X drop the card image). */}}
 {{- $ogWidth := 0 -}}
 {{- $ogHeight := 0 -}}
 {{- with $ogRes -}}
   {{- $r := . -}}
-  {{- if gt $r.Width 1200 -}}
-    {{- $r = $r.Resize "1200x" -}}
-  {{- end -}}
+  {{- $w := $r.Width -}}
+  {{- if gt $w 1200 -}}{{- $w = 1200 -}}{{- end -}}
+  {{- $r = $r.Resize (printf "%dx jpg q85" $w) -}}
   {{- $ogImage = $r.Permalink -}}
   {{- $ogWidth = $r.Width -}}
   {{- $ogHeight = $r.Height -}}
