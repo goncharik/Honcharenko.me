@@ -29,8 +29,12 @@
     {{- $ogImage = $first | absURL -}}
   {{- end -}}
 {{- else -}}
-  {{- with .Resources.ByType "image" -}}
-    {{- $ogRes = index . 0 -}}
+  {{- with .Resources.GetMatch "header.*" -}}
+    {{- $ogRes = . -}}
+  {{- else -}}
+    {{- with .Resources.ByType "image" -}}
+      {{- $ogRes = index . 0 -}}
+    {{- end -}}
   {{- end -}}
 {{- end -}}
 {{- if not (or $ogRes $ogImage) -}}
