@@ -578,6 +578,15 @@ video {
 .visible {
   visibility: visible;
 }
+.invisible {
+  visibility: hidden;
+}
+.collapse {
+  visibility: collapse;
+}
+.fixed {
+  position: fixed;
+}
 .absolute {
   position: absolute;
 }
@@ -635,6 +644,12 @@ video {
 }
 .flex-none {
   flex: none;
+}
+.shrink {
+  flex-shrink: 1;
+}
+.grow {
+  flex-grow: 1;
 }
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1035,6 +1050,13 @@ video {
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
+.content img.img-wide {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      margin-left: 0;
+      margin-right: 0;
+    }
 /* Book club layout - image floats right on wide screens */
 @media (min-width: 768px) {
       .content h3 + p img {
